@@ -21,31 +21,19 @@
 //     }
 // }
 
-header{
+.title{
     width: 100%;
-    background-color: $cor-rodape;
-    height: 80px;
-}
-
-menu{
-   display:flex;
-   justify-content: center;
-   position: absolute;
-    
-
-}
-
-
-.menu-link{
+    height: 35%;
+    margin-top: 0;
+    background-color: $cor-fundo2;
+    text-align: center;
+    vertical-align: middle;
     color:$cor-titulo;
-    text-decoration:none;
-    font-family: $fonte-titulo;
-    font-size: 18px;
-    float:right;
-    padding-left: 10%;
-    
-    
 
-
+    h1{
+        padding-top:5%;
+        margin:0;
+        
+    }
 }
 

@@ -417,26 +417,21 @@ body {
   width: 80%;
   margin: 0 auto; }
 
-header {
+.title {
   width: 100%;
-  background-color: #120309;
-  height: 80px; }
-
-menu {
-  display: flex;
-  justify-content: center;
-  position: absolute; }
-
-.menu-link {
-  color: #bcd2c3;
-  text-decoration: none;
-  font-family: "Casanova";
-  font-size: 18px;
-  float: right;
-  padding-left: 10%; }
+  height: 35%;
+  margin-top: 0;
+  background-color: #b3b0ab;
+  text-align: center;
+  vertical-align: middle;
+  color: #bcd2c3; }
+  .title h1 {
+    padding-top: 5%;
+    margin: 0; }
 
 footer {
   background-color: #453f3c;
+  width: 100%;
   height: 400px;
   bottom: 1px;
   display: grid; }
@@ -462,6 +457,7 @@ footer {
     position: relative;
     bottom: 4em;
     float: right;
+    padding-right: 2%;
     color: white; }
   footer .rodape-redes {
     background-color: #ebe1c6;
@@ -476,6 +472,53 @@ footer {
 
 .text-center {
   text-align: center; }
+
+header {
+  width: 100%;
+  background-color: #120309;
+  height: 80px; }
+
+menu {
+  display: flex;
+  justify-content: center;
+  position: absolute; }
+
+.menu-link {
+  color: #bcd2c3;
+  text-decoration: none;
+  font-family: "Casanova";
+  font-size: 18px;
+  float: right;
+  padding-left: 10%; }
+
+.galeria {
+  display: inline-flex; }
+
+.contato-form {
+  padding-top: 20%;
+  margin-top: 20%;
+  padding-bottom: 20%;
+  margin-bottom: 20%; }
+  .contato-form .formulario {
+    width: 50%; }
+
+form {
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+input[type=text] {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 2%; }
+
+input[type=email] {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 2%; }
+
+textarea {
+  width: 100%; }
 
 .home {
   background-image: url("../img/img-home1300.jpg");
@@ -532,6 +575,7 @@ footer {
     grid-area: img2; }
   .principal .p-principal1 {
     text-align: center;
+    background-color: #ebe1c6;
     grid-area: p1; }
   .principal .p-principal2 {
     text-align: center;
@@ -542,10 +586,29 @@ footer {
     width: 90%;
     padding-top: 20%; }
 
+.galeria {
+  height: 500px; }
+
 @media (min-width: 768px) {
   .pagina-conteudo {
     padding-right: 150px;
     padding-left: 150px; } }
+
+.sobre {
+  padding-bottom: 5%; }
+
+.img-sobre {
+  width: 50%;
+  float: left;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #bcd2c3ba; }
+
+.p-sobre {
+  width: 50%;
+  padding: 40px;
+  float: right;
+  text-align: justify; }
 
 body {
   width: 100%;

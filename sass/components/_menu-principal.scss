@@ -61,3 +61,31 @@
 //     }
 // }
 
+
+header{
+    width: 100%;
+    background-color: $cor-rodape;
+    height: 80px;
+}
+
+menu{
+   display:flex;
+   justify-content: center;
+   position: absolute;
+    
+
+}
+
+
+.menu-link{
+    color:$cor-titulo;
+    text-decoration:none;
+    font-family: $fonte-titulo;
+    font-size: 18px;
+    float:right;
+    padding-left: 10%;
+    
+    
+
+
+}
