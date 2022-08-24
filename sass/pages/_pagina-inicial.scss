@@ -1,0 +1,166 @@
+// .cabecalho-home{
+//     background: url('../img/cabecalho-home-bg.jpg') #000 no-repeat;
+//     background-size: cover;
+//     color: #fff;
+//     text-align: center;
+//     padding: 50px 0;
+//     padding-top: 150px;
+//     &__titulo{
+//         font-size: 40px;
+//         margin-bottom: 0;
+//     }
+//     &__role{
+//         display: none;
+//     }
+//     @media(min-width: $breakpoint-md){
+//         background-image: url("../img/cabecalho-home-bg-md.jpg");
+//     }
+//     @media(min-width: $breakpoint-lg){
+//         height: 100vh;
+//         &__titulo{
+//             font-size: 60px;
+//             margin-top: 250px;
+//         }
+//         &__subtitulo{
+//             font-size: 22px;
+//         }
+//         &__role{
+//             display: block;
+//             position: absolute;
+//             background: url('../img/icone-mouse.png') no-repeat center right;
+//             color: #fff;
+//             bottom: 10px;
+//             left: 50%;
+//             height: 50px;
+//             width: 190px;
+//             text-align: left;
+//             font-size: 20px;
+//             text-decoration: none;
+//             line-height: 45px;
+//             margin-left: -95px;
+//         }
+//     }
+//     @media(min-width: $breakpoint-xl){
+//         background-image: url("../img/cabecalho-home-bg-xl.jpg");
+//     }
+// }
+// .home{
+//     &__titulo{
+//         text-align: center;
+//         text-transform: uppercase;
+//         margin-bottom: 50px;
+//     }
+    
+//     &__titulo::after{
+//         content: '';
+//         display: block;
+//         width: 50px;
+//         height: 3px;
+//         background-color: $cor-principal;
+//         margin: 0 auto;
+//         margin-top: 15px;
+//     }
+//     &__titulo--branco::after{
+//         background-color: #fff;
+//     }
+// }
+
+.home{
+    background-image: url("../img/img-home1300.jpg");
+    background-size: cover;
+    backdrop-filter:opacity(0.8);
+    height: 100vh;
+    top:0;
+    text-align: center;
+    vertical-align: center;
+    animation: zum 5s;
+    -webkit-animation: zum 5s;
+    overflow-x: hidden;
+
+
+    @keyframes zum {
+        from {
+            transform:scale(1.1)
+          }
+          to {
+            transform: scale(1);
+          }
+        
+    }
+
+    h2{
+        font-family: "Parisienne";
+    }
+
+  
+   
+   .home-title{
+        margin-top: 0;
+        width:60%;
+        margin:0 auto;
+        padding-top: 10%;
+        font-family:"Casanova";
+        position: relative;
+        color: $cor-titulo;
+        font-size: 3em;
+        text-shadow: 2px 2px 2px $cor-rodape;
+        z-index: 999999;
+        animation: descer 4s ;
+
+        @keyframes descer {
+            from {
+                transform:skewX(1);
+              }
+              to {
+                transform: skewX(0);
+              }
+            
+        }
+    
+
+    }
+
+    
+
+}
+.principal{
+       max-width: 1200px;
+       color:$cor-leitura;
+       display:grid;
+       grid-template: "img1 p1" "p2 img2 ";
+       grid-template-areas: 100% 100%;
+       align-content: center;
+       justify-content: center;
+       margin:0 auto;
+
+    .img-principal #img1{
+        width:50%;
+        grid-area: img1;
+
+        }
+
+    .img-principal #img1{
+        width:50%;
+        grid-area: img2;
+
+        }
+
+    .p-principal1{
+        text-align: center;
+        grid-area: p1;
+    }
+
+    .p-principal2{
+        text-align: center;
+        grid-area: p2;
+    }
+
+
+       p{
+        text-align: justify;
+        padding:10%;
+        width: 90%;
+        padding-top: 20%;
+        
+       }
+    }

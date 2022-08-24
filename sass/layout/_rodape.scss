@@ -1,0 +1,126 @@
+// .rodape{
+//     color: #fff;
+//     .logo{
+//         margin-bottom: 20px;
+//     }
+//     &__linha-1{
+//         background-color: #272525;
+//         background-image: url("../img/rodape-bg.jpg");
+//         background-size: cover;
+//         padding-top: 15px;
+//         padding-bottom: 15px;
+//         overflow: auto;
+//     }
+//     &__linha-2{
+//         background-color: #000;
+//         text-align: center;
+//         padding-top: 15px;
+//         padding-bottom: 15px;
+//     }
+//     &__coluna{
+//         margin-top: 40px;
+//         margin-bottom: 40px;
+//     }
+//     &__titulo{
+//         border-bottom: 1px solid #fff;
+//         padding: 0 10px 10px 10px;
+//         font-size: 18px;
+//     }
+//     &__lista-links{
+//         padding: 0;
+//         list-style: none;
+//     }
+//     &__lista-links__item{
+//         color: #fff;
+//         text-decoration: none;
+//         margin-bottom: 10px;
+//         display: block;
+//     }
+//     &__lista-links__item::before{
+//         content: '>';
+//         margin-right: 8px;
+//         color: $cor-principal;
+//     }
+//     @media(min-width: $breakpoint-md){
+//         &__linha-1{
+//             background-image: url("../img/rodape-bg-md.jpg");
+//         }
+//         &__coluna{
+//             float: left;
+//             width: 33.333%;
+//             padding: 0 15px;
+//         }
+//     }
+//     @media(min-width: $breakpoint-md){
+//         &__linha-1{
+//             background-image: url("../img/rodape-bg-xl.jpg");
+//         }
+//     }
+// }
+
+footer{
+    background-color:$cor-link;
+    height:400px;
+    bottom: 1px;
+    display:grid;
+    // grid-template: "links ... end" "redes" "cop" ;
+    // grid-template-areas: 50% 1fr 50%;
+    // justify-content: center;
+    // align-content: end;
+
+    ul{
+        grid-area:links;
+        margin-top:0;
+        padding-top: 10%;
+        border-right: solid $cor-fundo;
+        width: 50%;
+        position: relative;
+        top:4em;
+
+        li{
+            list-style: none;
+
+
+            a{
+                text-decoration: none;
+                color:white;
+                font-family: "Roboto";
+            }
+
+            span{
+                font-size: 1.2em;
+                color:white;
+                font-family: "Roboto";
+
+            }
+        }
+    }
+
+    .endereco{
+        position:relative;
+        bottom:4em;
+        float:right;
+        color:white;
+    }
+
+    .rodape-redes{
+        background-color: $cor-fundo;
+        width: 60%;
+        // display:inline-block;
+        display:none;
+        margin-top:5%;
+
+    
+    
+      
+    }
+
+    .copy{
+        background-color: $cor-rodape;
+        color: $cor-fundo;
+        padding-top: 1%;
+        text-align: center;
+
+    }
+}
+
