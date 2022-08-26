@@ -7,6 +7,10 @@
 //     }
 // }
 
+.contato{
+    padding-bottom: 5%;
+}
+
 .contato-form{
     padding-top: 20%;
     margin-top: 20%;
@@ -20,9 +24,10 @@
 }
 form{
 
-    width: 50%;
+    width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+    grid-area: form;
 }
 
 input[type=text] {
@@ -40,4 +45,17 @@ input[type=email]{
 
 textarea{
     width: 100%; 
+}
+
+input[type=submit]{
+    padding: 10px 15px;
+    border: solid $cor-rodape;
+    width: 200px;
+    background-color: transparent;
+
+    &hover{
+        background-color:$cor-titulo2;
+        
+
+    }
 }

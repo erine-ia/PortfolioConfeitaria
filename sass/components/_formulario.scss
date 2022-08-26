@@ -70,3 +70,13 @@
 // }
 
 
+.formulario{
+    width: 100%;
+    
+}
+
+.contat-form{
+    display:grid;
+    grid-template:"form ... map" ;
+    grid-template-areas: 2fr 1fr 2fr;
+}

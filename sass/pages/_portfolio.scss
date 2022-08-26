@@ -68,8 +68,92 @@
 //     }
 // }
 
+.produtos{
+    padding-bottom: 5%;
+}
+
 .galeria{
-    height: 500px;
+    height:500px;
+    padding: 5% 0;
+   
+
+    input{
+        display:none;
+    }
+
+
+    label{
+        background-color: $cor-titulo;
+        bottom: 10px;
+        cursor: pointer;
+        display: block;
+        height: 10px;
+        position: absolute;
+        width: 10px;
+        z-index: 10;
+    }
+    
+    .gal-img:nth-child(1) label {
+        left: 10px;
+    }
+    
+    .gal-img:nth-child(2) label {
+        left: 40px;
+    }
+    
+    .gal-img:nth-child(3) label {
+        left: 70px;
+    }
+
+    .gal-img:nth-child(4) label {
+        left: 100px;
+    }
+    
+
+    .gal-img:nth-child(5) label {
+        left: 140px;
+    }
+
+
+    .gal-img img{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .gal-img input:checked ~ img{
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+    }
+    
+    
+    
     
     
 }
+
+.gal-img{
+    padding-top: 5%;
+    width:50%;
+    height: 50%;
+    position:absolute;
+
+   
+    
+
+   img{
+    // padding:0 5%;
+    // background-color: $cor-titulo2;
+    height:100% ;
+    width:100%;
+
+
+   }
+
+  
+    
+}
+
+
+
+

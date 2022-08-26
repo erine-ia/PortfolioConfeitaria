@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fontes.css">
+    <link rel="shortcut icon" href="../fontawesome/fontawesome-free-6.1.2-web/webfonts/fa-regular-400.ttf" type="image/x-icon">
+
     <title>Valdineis Mateus</title>
 </head>
 <body>
@@ -27,13 +29,54 @@
         <h1 class="prod-title">Nossos Produtos</h1>
     </section>
     <section class="galeria">
-        <div class="gal-img"><a data-fancybox="gallery" class="gal-img__link" href=""><img src="../img/port-1.jpg" alt=""></a></div>
-        <div class="gal-img"><a class="gal-img__link" href=""><img src="../img/port-2.jpg" alt=""></a></div>
-        <div class="gal-img"><a class="gal-img__link" href=""><img src="../img/port-4.jpg" alt=""></a></div>
-        <div class="gal-img"><a class="gal-img__link" href=""><img src="../img/port-3.jpg" alt=""></a></div>
-        <div class="gal-img"><a class="gal-img__link" href=""><img src="../img/port-4.jpg" alt=""></a></div>
-        <div class="gal-img"><a class="gal-img__link" href=""><img src="../img/port-5.jpg" alt=""></a></div>
-        <!-- <div class="gal-img"><a class="gal-img__link" href=""><img src="" alt=""></a></div> -->
+        <!-- <button class="btn_dir">click</button> -->
+        
+        <div class="gal-img">
+            <input type="radio" id="img-1" name="slide" checked>
+            <label for="img-1"></label>
+            <img src="../img/port-2.jpg" alt="">
+            <a data-fancybox="gallery" class="gal-img__link" href=""><img src="../img/port-2.jpg" alt=""></a>
+        </div>
+
+
+        <div class="gal-img">
+            <input type="radio" id="img-2" name="slide" >
+            <label for="img-2"></label>
+            <img src="../img/port-4.jpg" alt="">
+            <a data-fancybox="gallery" class="gal-img__link" href=""><img src="../img/port-4.jpg" alt=""></a>
+        </div>
+
+        <div class="gal-img">
+            <input type="radio" id="img-3" name="slide">
+            <label for="img-3"></label>
+            <img src="../img/port-3.jpg" alt="">
+            <a data-fancybox="gallery" class="gal-img__link" href=""><img src="../img/port-3.jpg" alt=""></a>
+        </div>
+
+
+
+        <div class="gal-img">
+            <input type="radio" id="img-4" name="slide">
+            <label for="img-4"></label>
+            <img src="../img/port-4.jpg" alt="">
+            <a data-fancybox="gallery" class="gal-img__link" href=""><img src="../img/port-4.jpg" alt=""></a>
+        </div>
+
+
+        <div class="gal-img">
+            <input type="radio" id="img-5" name="slide" >
+            <label for="img-5"></label>
+            <img src="../img/port-5.jpg" alt="">
+            <a data-fancybox="gallery" class="gal-img__link" href=""><img src="../img/port-5.jpg" alt=""></a>
+        </div>
+
+
+        <div class="gal-img">
+            <input type="radio" id="slide6" name="slide" >
+            <label for="slide6"></label>
+            <img src="../img/port-1.jpg" alt="">
+            <a data-fancybox="gallery" class="gal-img__link" href=""><img src="../img/port-1.jpg" alt=""></a>
+        </div><!-- <div class="gal-img"><a class="gal-img__link" href=""><img src="" alt=""></a></div> -->
     </section>
 
 
@@ -70,7 +113,8 @@
                     (11) 2345-8876
                 </p>
                 <div class="rodape-redes">
-                    <a href=""><img src="" alt="Instagram"></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>  
+                            <img src="" alt="Instagram">
                     <a href=""><img src="" alt="Facebook"></a>
                     <a href=""><img src="" alt="Whatsapp"></a>
                 </div>
@@ -88,6 +132,13 @@
 
         
     </footer>
+    <script src="../js/app.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+    
+  
 
 </body>
 </html>
